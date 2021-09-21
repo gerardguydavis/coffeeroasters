@@ -1,0 +1,80 @@
+body {
+    background-color: $lightcream;
+}
+header {
+    @extend %center-flex;
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row;
+        width: 327px;
+        height: 90px;
+        figure {
+            margin: 0;
+            width: 163px;
+            img {
+                width: 100%;
+            }
+        }
+        nav {
+            .hamburger {
+                content: url("../assets/shared/mobile/icon-hamburger.svg");
+                width: 16px;
+            }
+        }
+        ul {
+            display: none;
+        }
+    }
+}
+
+main {
+    @extend %center-flex;
+    .hero {
+        @extend %center-flex;
+        align-items: center;
+        background: url('../assets/home/mobile/image-hero-coffeepress.jpg') center no-repeat #A2A2A2;
+        background-size: contain;
+        width: 327px;
+        height: 500px;
+        border-radius: 10px;
+        color: $lightcream;
+        .hero-wrap {
+            width: 279px;
+            text-align: center;
+            h1 {
+                font: { 
+                family: $fraunces;
+                size: 40px;
+                }
+                line-height: 40px;
+                margin: 0 0 24px;
+            }
+            p {
+                font: {
+                    family: $barlow;
+                    size: 15px;
+                }
+                line-height: 25px;
+                opacity: 80%;
+                margin: 0;
+                
+            }
+            button {
+                background-color: $darkcyan;
+                border: none;
+                border-radius: 6px;
+                width: 217px;
+                height: 56px;
+                font: {
+                    family: $fraunces;
+                    size: 18px;
+                }
+                line-height: 26px;
+                color: $lightcream;
+                margin: 39px 0 0;
+            }
+        }
+    }
+}

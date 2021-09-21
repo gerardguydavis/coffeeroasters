@@ -3,3 +3,12 @@ $darkgreyblue: #333D4B;
 $paleorange: #FDD6BA;
 $lightcream: #FEFCF7;
 $grey: #83888F;
+$barlow: 'Barlow', sans-serif;
+$fraunces: 'Fraunces', serif;
+
+
+%center-flex {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
