@@ -1,2 +1,14 @@
 @import 'helpers/variables';
+@import 'layout/header';
 @import 'layout/hero';
+@import 'layout/collection';
+@import 'layout/why-us';
+@import 'components/why-card';
+
+body {
+    background-color: $lightcream;
+}
+
+main {
+    @extend %center-flex;
+}

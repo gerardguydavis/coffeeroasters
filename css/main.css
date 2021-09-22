@@ -1,20 +1,17 @@
-main .collection .collection-wrap .coffee-wrap, main .collection .collection-wrap, main .collection, main .hero, main, header {
+main, .why-card .why-card-text, .why-card, .why-us .why-wrap, .why-us, .collection .collection-wrap .coffee-wrap, .collection .collection-wrap, .collection, .hero, header {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-body {
-  background-color: #FEFCF7;
-}
-
 header .header-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   flex-flow: row;
   width: 327px;
-  height: 90px;
+  padding: 36px 0;
+  height: 18px;
 }
 header .header-wrap figure {
   margin: 0;
@@ -31,7 +28,7 @@ header .header-wrap ul {
   display: none;
 }
 
-main .hero {
+.hero {
   align-items: center;
   background: url("../assets/home/mobile/image-hero-coffeepress.jpg") center no-repeat #A2A2A2;
   background-size: contain;
@@ -41,25 +38,25 @@ main .hero {
   color: #FEFCF7;
   margin: 0;
 }
-main .hero .hero-wrap {
+.hero .hero-wrap {
   width: 279px;
   text-align: center;
 }
-main .hero .hero-wrap h1 {
+.hero .hero-wrap h1 {
   font-family: "Fraunces", serif;
   font-size: 40px;
   line-height: 40px;
   margin: 0 0 24px;
 }
-main .hero .hero-wrap p {
+.hero .hero-wrap p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
   line-height: 25px;
   opacity: 80%;
   margin: 0;
 }
-main .hero .hero-wrap button {
-  background-color: #0E8794;
+.hero .hero-wrap button {
+  background-color: #0E8784;
   border: none;
   border-radius: 6px;
   width: 217px;
@@ -70,13 +67,14 @@ main .hero .hero-wrap button {
   color: #FEFCF7;
   margin: 39px 0 0;
 }
-main .collection {
+
+.collection {
   margin: 120px 0;
 }
-main .collection .collection-wrap {
+.collection .collection-wrap {
   width: 100%;
 }
-main .collection .collection-wrap h2 {
+.collection .collection-wrap h2 {
   font-family: "Fraunces", serif;
   font-size: 40px;
   font-weight: 900;
@@ -85,7 +83,7 @@ main .collection .collection-wrap h2 {
   color: #83888F;
   margin: -72px 0 13px;
 }
-main .collection .collection-wrap h2::before {
+.collection .collection-wrap h2::before {
   display: block;
   content: "";
   width: 100%;
@@ -93,29 +91,29 @@ main .collection .collection-wrap h2::before {
   background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
   transform: translateY(100%);
 }
-main .collection .collection-wrap .coffee-wrap {
+.collection .collection-wrap .coffee-wrap {
   text-align: center;
   margin: 24px 0;
 }
-main .collection .collection-wrap .coffee-wrap:first-of-type {
+.collection .collection-wrap .coffee-wrap:first-of-type {
   margin-top: 0;
 }
-main .collection .collection-wrap .coffee-wrap:last-of-type {
+.collection .collection-wrap .coffee-wrap:last-of-type {
   margin-bottom: 0;
 }
-main .collection .collection-wrap .coffee-wrap .coffee-img {
+.collection .collection-wrap .coffee-wrap .coffee-img {
   width: 200px;
   margin: 0;
 }
-main .collection .collection-wrap .coffee-wrap .coffee-img img {
+.collection .collection-wrap .coffee-wrap .coffee-img img {
   width: 100%;
 }
-main .collection .collection-wrap .coffee-wrap .coffee-text-wrap {
+.collection .collection-wrap .coffee-wrap .coffee-text-wrap {
   width: 282px;
   margin: 24px 0 0;
   color: #333D4B;
 }
-main .collection .collection-wrap .coffee-wrap .coffee-text-wrap h3 {
+.collection .collection-wrap .coffee-wrap .coffee-text-wrap h3 {
   width: 100%;
   font-family: "Fraunces", serif;
   font-size: 24px;
@@ -123,11 +121,76 @@ main .collection .collection-wrap .coffee-wrap .coffee-text-wrap h3 {
   line-height: 32px;
   margin: 0 0 16px;
 }
-main .collection .collection-wrap .coffee-wrap .coffee-text-wrap p {
+.collection .collection-wrap .coffee-wrap .coffee-text-wrap p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
   line-height: 25px;
   margin: 0;
+}
+
+.why-us .why-wrap {
+  background: #333D4B;
+  width: 327px;
+  height: 902px;
+  border-radius: 10px;
+  margin: 0 0 717px;
+  color: #FEFCF7;
+}
+.why-us .why-wrap .why-text-wrap {
+  margin: 64px 0 34px;
+  width: 279px;
+  text-align: center;
+}
+.why-us .why-wrap .why-text-wrap h2 {
+  margin: 0 0 24px;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+.why-us .why-wrap .why-text-wrap p {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 80%;
+}
+
+.why-card {
+  background: #0E8784;
+  width: 279px;
+  height: 382px;
+  border-radius: 8px;
+  text-align: center;
+  color: #FEFCF7;
+  margin: 24px 0;
+}
+.why-card:first-of-type {
+  margin-top: 0;
+}
+.why-card:last-of-type {
+  margin-bottom: 0;
+}
+.why-card .why-card-img {
+  margin: 72px 0 32px;
+}
+.why-card .why-card-text {
+  width: 255px;
+}
+.why-card .why-card-text h3 {
+  margin: 24px 0;
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  line-height: 32px;
+}
+.why-card .why-card-text p {
+  margin: 0 0 48px;
+  width: 212px;
+  font-family: "Barlow", sans-serif;
+  font-font-size: 15px;
+  line-height: 25px;
+}
+
+body {
+  background-color: #FEFCF7;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+.why-card {
+    @extend %center-flex;
+    background: $darkcyan;
+    width: 279px;
+    height: 382px;
+    border-radius: 8px;
+    text-align: center;
+    color: $lightcream;
+    margin: 24px 0;
+    &:first-of-type {
+        margin-top: 0;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    .why-card-img {
+        margin: 72px 0 32px;
+    }
+    .why-card-text {
+        width: 255px;
+        @extend %center-flex;
+        h3 {
+            margin: 24px 0;
+            font: {
+                family: $fraunces;
+                size: 24px;
+            }
+            line-height: 32px;
+        }
+        p {
+            margin: 0 0 48px;
+            width: 212px;
+            font: {
+                family: $barlow;
+                font-size: 15px;
+            }
+            line-height: 25px;
+        }   
+    }
+}

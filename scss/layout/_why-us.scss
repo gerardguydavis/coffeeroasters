@@ -1,0 +1,33 @@
+.why-us {
+    @extend %center-flex;
+    .why-wrap {
+        @extend %center-flex;
+        background: $darkgreyblue;
+        width: 327px;
+        height: 902px;
+        border-radius: 10px;
+        margin: 0 0 717px;
+        color: $lightcream;
+        .why-text-wrap {
+            margin: 64px 0 34px;
+            width: 279px;
+            text-align: center;
+            h2 {
+                margin: 0 0 24px;
+                font: {
+                    family: $fraunces;
+                    size: 28px;
+                    weight: 900;
+                }
+            }
+            p {
+                font: {
+                    family: $barlow;
+                    size: 15px;
+                }
+                line-height: 25px;
+                opacity: 80%;
+            }
+        }
+    }
+}

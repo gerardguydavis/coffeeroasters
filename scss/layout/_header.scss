@@ -1,0 +1,28 @@
+header {
+    @extend %center-flex;
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-flow: row;
+        width: 327px;
+        padding: 36px 0;
+        height: 18px;
+        figure {
+            margin: 0;
+            width: 163px;
+            img {
+                width: 100%;
+            }
+        }
+        nav {
+            .hamburger {
+                content: url("../assets/shared/mobile/icon-hamburger.svg");
+                width: 16px;
+            }
+        }
+        ul {
+            display: none;
+        }
+    }
+}
