@@ -77,13 +77,15 @@ header .header-wrap ul {
   width: 100%;
 }
 .collection .collection-wrap h2 {
+  width: 100%;
   font-family: "Fraunces", serif;
   font-size: 40px;
   font-weight: 900;
+  text-align: center;
   text-transform: lowercase;
-  line-height: 70px;
+  line-height: 72px;
   color: #83888F;
-  margin: -72px 0 13px;
+  margin: -72px 0 26px;
 }
 .collection .collection-wrap h2::before {
   display: block;
@@ -104,11 +106,11 @@ header .header-wrap ul {
   margin-bottom: 0;
 }
 .collection .collection-wrap .coffee-wrap .coffee-img {
-  width: 200px;
+  width: 100%;
   margin: 0;
 }
 .collection .collection-wrap .coffee-wrap .coffee-img img {
-  width: 100%;
+  width: 200px;
 }
 .collection .collection-wrap .coffee-wrap .coffee-text-wrap {
   width: 282px;

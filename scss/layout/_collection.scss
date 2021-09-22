@@ -5,15 +5,19 @@
         @extend %center-flex;
         width: 100%;
         h2 {
+            width: 100%;
             font: {
                 family: $fraunces;
                 size: 40px;
                 weight: 900;
             }
-            text-transform: lowercase;
-            line-height: 70px;
+            text: {
+                align: center;
+                transform: lowercase;
+            }
+            line-height: 72px;
             color: $grey;
-            margin: -72px 0 13px;
+            margin: -72px 0 26px;
             &::before {
                 display: block;
                 content: '';
@@ -34,10 +38,10 @@
                 margin-bottom: 0;
             }
             .coffee-img {
-                width: 200px;
+                width: 100%;
                 margin: 0;
                 img {
-                    width: 100%;
+                    width: 200px;
                 }
             }
             .coffee-text-wrap {
