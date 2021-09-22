@@ -1,0 +1,19 @@
+%center-flex {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+%button {
+    background-color: $darkcyan;
+    border: none;
+    border-radius: 6px;
+    width: 217px;
+    height: 56px;
+    font: {
+        family: $fraunces;
+        size: 18px;
+    }
+    line-height: 26px;
+    color: $lightcream;
+}

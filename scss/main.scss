@@ -1,12 +1,16 @@
 @import 'helpers/variables';
+@import 'helpers/mixins';
 @import 'layout/header';
 @import 'layout/hero';
 @import 'layout/collection';
 @import 'layout/why-us';
+@import 'layout/how-it-works';
 @import 'components/why-card';
+@import 'components/footer';
 
 body {
     background-color: $lightcream;
+    @extend %center-flex;
 }
 
 main {

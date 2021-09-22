@@ -1,7 +1,19 @@
-main, .why-card .why-card-text, .why-card, .why-us .why-wrap, .why-us, .collection .collection-wrap .coffee-wrap, .collection .collection-wrap, .collection, .hero, header {
+main, body, footer .footer-wrap, footer, .why-card .why-card-text, .why-card, .how-it-works .how-wrap, .how-it-works, .why-us .why-wrap, .why-us, .collection .collection-wrap .coffee-wrap, .collection .collection-wrap, .collection, .hero .hero-wrap, .hero, header {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.how-it-works .how-wrap button, .hero .hero-wrap .hero-text-wrap button {
+  background-color: #0E8784;
+  border: none;
+  border-radius: 6px;
+  width: 217px;
+  height: 56px;
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FEFCF7;
 }
 
 header .header-wrap {
@@ -28,7 +40,7 @@ header .header-wrap ul {
   display: none;
 }
 
-.hero {
+.hero .hero-wrap {
   align-items: center;
   background: url("../assets/home/mobile/image-hero-coffeepress.jpg") center no-repeat #A2A2A2;
   background-size: contain;
@@ -36,35 +48,25 @@ header .header-wrap ul {
   height: 500px;
   border-radius: 10px;
   color: #FEFCF7;
-  margin: 0;
 }
-.hero .hero-wrap {
+.hero .hero-wrap .hero-text-wrap {
   width: 279px;
   text-align: center;
 }
-.hero .hero-wrap h1 {
+.hero .hero-wrap .hero-text-wrap h1 {
   font-family: "Fraunces", serif;
   font-size: 40px;
   line-height: 40px;
   margin: 0 0 24px;
 }
-.hero .hero-wrap p {
+.hero .hero-wrap .hero-text-wrap p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
   line-height: 25px;
   opacity: 80%;
   margin: 0;
 }
-.hero .hero-wrap button {
-  background-color: #0E8784;
-  border: none;
-  border-radius: 6px;
-  width: 217px;
-  height: 56px;
-  font-family: "Fraunces", serif;
-  font-size: 18px;
-  line-height: 26px;
-  color: #FEFCF7;
+.hero .hero-wrap .hero-text-wrap button {
   margin: 39px 0 0;
 }
 
@@ -154,6 +156,52 @@ header .header-wrap ul {
   opacity: 80%;
 }
 
+.how-it-works {
+  text-align: center;
+  margin: 0 0 120px;
+}
+.how-it-works .how-wrap {
+  width: 327px;
+}
+.how-it-works .how-wrap h2 {
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  color: #83888F;
+  margin: 0 0 80px;
+}
+.how-it-works .how-wrap .how-card {
+  margin: 28px 0;
+}
+.how-it-works .how-wrap .how-card:first-of-type {
+  margin: 0 0 28px;
+}
+.how-it-works .how-wrap .how-card h4 {
+  font-family: "Fraunces", serif;
+  font-size: 72px;
+  font-weight: 900;
+  color: #FDD6BA;
+  margin: 0;
+}
+.how-it-works .how-wrap .how-card h3 {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 32px;
+  color: #333D4B;
+  margin: 24px 0;
+}
+.how-it-works .how-wrap .how-card p {
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #333D4B;
+}
+.how-it-works .how-wrap button {
+  margin: 51px 0 0;
+}
+
 .why-card {
   background: #0E8784;
   width: 279px;
@@ -164,10 +212,10 @@ header .header-wrap ul {
   margin: 24px 0;
 }
 .why-card:first-of-type {
-  margin-top: 0;
+  margin: 0 0 24px;
 }
 .why-card:last-of-type {
-  margin-bottom: 0;
+  margin: 24px 0 0;
 }
 .why-card .why-card-img {
   margin: 72px 0 32px;
@@ -187,6 +235,48 @@ header .header-wrap ul {
   font-family: "Barlow", sans-serif;
   font-font-size: 15px;
   line-height: 25px;
+}
+
+footer .footer-wrap {
+  background: #2C343E;
+  width: 327px;
+  height: 238px;
+  margin: 0 0 72px;
+  padding: 54px 0;
+}
+footer .footer-wrap .footer-logo {
+  margin: 0;
+}
+footer .footer-wrap nav {
+  width: 100%;
+  margin: 48px 0 50px;
+}
+footer .footer-wrap nav ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #83888F;
+  text-align: center;
+  letter-spacing: 0.92px;
+}
+footer .footer-wrap nav ul li {
+  list-style: none;
+  margin: 24px 0;
+}
+footer .footer-wrap nav ul li:first-of-type {
+  margin: 0 0 24px;
+}
+footer .footer-wrap nav ul li:last-of-type {
+  margin: 24px 0 0;
+}
+footer .footer-wrap .socials {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 120px;
 }
 
 body {

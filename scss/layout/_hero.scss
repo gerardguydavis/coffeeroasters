@@ -1,46 +1,38 @@
 .hero {
     @extend %center-flex;
-    align-items: center;
-    background: url('../assets/home/mobile/image-hero-coffeepress.jpg') center no-repeat #A2A2A2;
-    background-size: contain;
-    width: 327px;
-    height: 500px;
-    border-radius: 10px;
-    color: $lightcream;
-    margin: 0;
     .hero-wrap {
-        width: 279px;
-        text-align: center;
-        h1 {
-            font: { 
-            family: $fraunces;
-            size: 40px;
-            }
-            line-height: 40px;
-            margin: 0 0 24px;
-        }
-        p {
-            font: {
-                family: $barlow;
-                size: 15px;
-            }
-            line-height: 25px;
-            opacity: 80%;
-            margin: 0;               
-        }
-        button {
-            background-color: $darkcyan;
-            border: none;
-            border-radius: 6px;
-            width: 217px;
-            height: 56px;
-            font: {
+        @extend %center-flex;
+        align-items: center;
+        background: url('../assets/home/mobile/image-hero-coffeepress.jpg') center no-repeat #A2A2A2;
+        background-size: contain;
+        width: 327px;
+        height: 500px;
+        border-radius: 10px;
+        color: $lightcream;
+        .hero-text-wrap {
+            width: 279px;
+            text-align: center;
+            h1 {
+                font: { 
                 family: $fraunces;
-                size: 18px;
+                size: 40px;
+                }
+                line-height: 40px;
+                margin: 0 0 24px;
             }
-            line-height: 26px;
-            color: $lightcream;
-            margin: 39px 0 0;
+            p {
+                font: {
+                    family: $barlow;
+                    size: 15px;
+                }
+                line-height: 25px;
+                opacity: 80%;
+                margin: 0;               
+            }
+            button {
+                @extend %button;
+                margin: 39px 0 0;
+            }
         }
     }
 }
