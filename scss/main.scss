@@ -5,8 +5,11 @@
 @import 'layout/collection';
 @import 'layout/why-us';
 @import 'layout/how-it-works';
+@import 'layout/about';
 @import 'components/why-card';
 @import 'components/footer';
+@import 'components/about-us-card';
+@import 'components/our-commitment';
 
 body {
     background-color: $lightcream;
@@ -15,4 +18,16 @@ body {
 
 main {
     @extend %center-flex;
+}
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 25%;
+    background:#000;
+    border-radius: 10px;
 }

@@ -1,4 +1,4 @@
-main, body, footer .footer-wrap, footer, .why-card .why-card-text, .why-card, .how-it-works .how-wrap, .how-it-works, .why-us .why-wrap, .why-us, .collection .collection-wrap .coffee-wrap, .collection .collection-wrap, .collection, .hero .hero-wrap, .hero, header {
+main, body, .commitment, .about, footer .footer-wrap, footer, .why-card .why-card-text, .why-card, .how-it-works .how-wrap, .how-it-works, .why-us .why-wrap, .why-us, .collection .collection-wrap .coffee-wrap, .collection .collection-wrap, .collection, .hero .hero-wrap, .hero, header {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -204,6 +204,10 @@ header .header-wrap ul {
   margin: 51px 0 0;
 }
 
+.about {
+  margin: 0 0 120px;
+}
+
 .why-card {
   background: #0E8784;
   width: 279px;
@@ -281,8 +285,81 @@ footer .footer-wrap .socials {
   width: 120px;
 }
 
+.about .about-card {
+  width: 327px;
+  height: 400px;
+  position: relative;
+  background: url("../assets/about/mobile/image-hero-whitecup.jpg") center no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  text-align: center;
+  color: #FEFCF7;
+  z-index: 0;
+  border-radius: 10px;
+}
+.about .about-card .about-card-wrap {
+  width: 100%;
+  height: 100%;
+  padding: 111px 24px 87px;
+  box-sizing: border-box;
+}
+.about .about-card .about-card-wrap h2 {
+  margin: 0 0 24px;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+.about .about-card .about-card-wrap p {
+  margin: 0;
+  line-height: 25px;
+  opacity: 0.8;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.commitment .commitment-wrap {
+  width: 327px;
+  text-align: center;
+  color: #333D4B;
+}
+.commitment .commitment-wrap .barista-card {
+  width: 327px;
+  height: 400px;
+  position: relative;
+  background: url("../assets/about/mobile/image-commitment.jpg") center no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+  z-index: 0;
+}
+.commitment .commitment-wrap h2 {
+  margin: 48px 0 30px;
+  line-height: 48px;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 900;
+}
+.commitment .commitment-wrap p {
+  line-height: 25px;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 body {
   background-color: #FEFCF7;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 25%;
+  background: #000;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
