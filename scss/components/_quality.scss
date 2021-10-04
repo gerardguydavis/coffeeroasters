@@ -1,0 +1,52 @@
+.quality {
+    @extend %center-flex;
+    width: 100%;
+    .quality-wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 327px;
+        height: 509px;
+        padding: 142px 24px 61px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 198px 0 0;
+        background: $footergrey;
+        border-radius: 10px;
+        .cup-card {
+            display: block;
+            position: absolute;
+            top: -78px;
+            width: 279px;
+            height: 156px;
+            background: url('../assets/about/mobile/image-quality.jpg') center no-repeat;
+            background-size: contain;
+            border-radius: 8px;
+        }
+        .quality-text-wrap {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            text-align: center;
+            color: $lightcream;
+            h2 {
+                margin: 0 0 24px;
+                font: {
+                    family: $fraunces;
+                    size: 28px;
+                    weight: 900;
+                }
+            }
+            p {
+                margin: 0;
+                line-height: 25px;
+                opacity: .8;
+                font: {
+                    family: $barlow;
+                    size: 15px;
+                    weight: 400;
+                }
+            }
+        }
+    }
+}

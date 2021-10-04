@@ -1,4 +1,4 @@
-main, body, .commitment, .about, footer .footer-wrap, footer, .why-card .why-card-text, .why-card, .how-it-works .how-wrap, .how-it-works, .why-us .why-wrap, .why-us, .collection .collection-wrap .coffee-wrap, .collection .collection-wrap, .collection, .hero .hero-wrap, .hero, header {
+main, body, .quality, .commitment, .about, footer .footer-wrap, footer, .why-card .why-card-text, .why-card, .how-it-works .how-wrap, .how-it-works, .why-us .why-wrap, .why-us, .collection .collection-wrap .coffee-wrap, .collection .collection-wrap, .collection, .hero .hero-wrap, .hero, header {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -340,7 +340,56 @@ footer .footer-wrap .socials {
   font-weight: 900;
 }
 .commitment .commitment-wrap p {
+  margin: 0;
   line-height: 25px;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.quality {
+  width: 100%;
+}
+.quality .quality-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 327px;
+  height: 509px;
+  padding: 142px 24px 61px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 198px 0 0;
+  background: #2C343E;
+  border-radius: 10px;
+}
+.quality .quality-wrap .cup-card {
+  display: block;
+  position: absolute;
+  top: -78px;
+  width: 279px;
+  height: 156px;
+  background: url("../assets/about/mobile/image-quality.jpg") center no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+}
+.quality .quality-wrap .quality-text-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  color: #FEFCF7;
+}
+.quality .quality-wrap .quality-text-wrap h2 {
+  margin: 0 0 24px;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+.quality .quality-wrap .quality-text-wrap p {
+  margin: 0;
+  line-height: 25px;
+  opacity: 0.8;
   font-family: "Barlow", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -354,10 +403,11 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+  mix-blend-mode: overlay;
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 25%;
+  opacity: 20%;
   background: #000;
   border-radius: 10px;
 }

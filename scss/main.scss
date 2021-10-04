@@ -10,6 +10,7 @@
 @import 'components/footer';
 @import 'components/about-us-card';
 @import 'components/our-commitment';
+@import 'components/quality';
 
 body {
     background-color: $lightcream;
@@ -24,10 +25,11 @@ main {
     width: 100%;
     height: 100%;
     position: absolute;
+    mix-blend-mode: overlay;
     top: 0;
     left: 0;
     z-index: -1;
-    opacity: 25%;
+    opacity: 20%;
     background:#000;
     border-radius: 10px;
 }
