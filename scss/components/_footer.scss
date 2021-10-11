@@ -1,16 +1,18 @@
 footer {
     @extend %center-flex;
-    .footer-wrap {
+    .footer {
+        &--wrapper{
         @extend %center-flex;
         background: $footergrey;
         width: 327px;
         height: 238px;
         margin: 0 0 72px;
         padding: 54px 0;
-        .footer-logo {
+        }
+        &--logo {
             margin: 0;
         }
-        nav {
+        &--nav {
             width: 100%;
             margin: 48px 0 50px;
             ul {
@@ -37,7 +39,7 @@ footer {
                 }
             }
         }
-        .socials {
+        &--socials {
             display: flex;
             flex-flow: row;
             justify-content: space-between;

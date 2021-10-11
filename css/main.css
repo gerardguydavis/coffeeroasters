@@ -1,10 +1,10 @@
-main, body, .quality, .commitment, .about, footer .footer-wrap, footer, .why-card .why-card-text, .why-card, .how-it-works .how-wrap, .how-it-works, .why-us .why-wrap, .why-us, .collection .collection-wrap .coffee-wrap, .collection .collection-wrap, .collection, .hero .hero-wrap, .hero, header {
+main, body, .quality, .commitment, .about, footer .footer--wrapper, footer, .why-cards--card-text, .why-cards--card, .how-it-works--container, .how-it-works, .why-us--container, .why-us, .collection--coffee, .collection--container, .collection, .hero--wrapper, .hero, header {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.how-it-works .how-wrap button, .hero .hero-wrap .hero-text-wrap button {
+.how-it-works button, .hero--text button {
   background-color: #0E8784;
   border: none;
   border-radius: 6px;
@@ -16,7 +16,7 @@ main, body, .quality, .commitment, .about, footer .footer-wrap, footer, .why-car
   color: #FEFCF7;
 }
 
-header .header-wrap {
+header .header--wrapper {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -25,22 +25,23 @@ header .header-wrap {
   padding: 36px 0;
   height: 18px;
 }
-header .header-wrap figure {
+header .header--wrapper figure {
   margin: 0;
   width: 163px;
 }
-header .header-wrap figure img {
+header .header--wrapper figure img {
   width: 100%;
 }
-header .header-wrap nav .hamburger {
+header .header--nav .hamburger {
   content: url("../assets/shared/mobile/icon-hamburger.svg");
   width: 16px;
 }
-header .header-wrap ul {
+header .header--nav--menu {
   display: none;
+  background: pink;
 }
 
-.hero .hero-wrap {
+.hero--wrapper {
   align-items: center;
   background: url("../assets/home/mobile/image-hero-coffeepress.jpg") center no-repeat #A2A2A2;
   background-size: contain;
@@ -49,34 +50,34 @@ header .header-wrap ul {
   border-radius: 10px;
   color: #FEFCF7;
 }
-.hero .hero-wrap .hero-text-wrap {
+.hero--text {
   width: 279px;
   text-align: center;
 }
-.hero .hero-wrap .hero-text-wrap h1 {
+.hero--text h1 {
   font-family: "Fraunces", serif;
   font-size: 40px;
   line-height: 40px;
   margin: 0 0 24px;
 }
-.hero .hero-wrap .hero-text-wrap p {
+.hero--text p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
   line-height: 25px;
   opacity: 80%;
   margin: 0;
 }
-.hero .hero-wrap .hero-text-wrap button {
+.hero--text button {
   margin: 39px 0 0;
 }
 
 .collection {
   margin: 120px 0;
 }
-.collection .collection-wrap {
+.collection--container {
   width: 100%;
 }
-.collection .collection-wrap h2 {
+.collection--heading {
   width: 100%;
   font-family: "Fraunces", serif;
   font-size: 40px;
@@ -87,7 +88,7 @@ header .header-wrap ul {
   color: #83888F;
   margin: -72px 0 26px;
 }
-.collection .collection-wrap h2::before {
+.collection--heading::before {
   display: block;
   content: "";
   width: 100%;
@@ -95,29 +96,29 @@ header .header-wrap ul {
   background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
   transform: translateY(100%);
 }
-.collection .collection-wrap .coffee-wrap {
+.collection--coffee {
   text-align: center;
   margin: 24px 0;
 }
-.collection .collection-wrap .coffee-wrap:first-of-type {
+.collection--coffee:first-of-type {
   margin-top: 0;
 }
-.collection .collection-wrap .coffee-wrap:last-of-type {
+.collection--coffee:last-of-type {
   margin-bottom: 0;
 }
-.collection .collection-wrap .coffee-wrap .coffee-img {
+.collection--coffee--coffee-img {
   width: 100%;
   margin: 0;
 }
-.collection .collection-wrap .coffee-wrap .coffee-img img {
+.collection--coffee--coffee-img img {
   width: 200px;
 }
-.collection .collection-wrap .coffee-wrap .coffee-text-wrap {
+.collection--coffee-text {
   width: 282px;
   margin: 24px 0 0;
   color: #333D4B;
 }
-.collection .collection-wrap .coffee-wrap .coffee-text-wrap h3 {
+.collection--coffee-text--name {
   width: 100%;
   font-family: "Fraunces", serif;
   font-size: 24px;
@@ -125,14 +126,14 @@ header .header-wrap ul {
   line-height: 32px;
   margin: 0 0 16px;
 }
-.collection .collection-wrap .coffee-wrap .coffee-text-wrap p {
+.collection--coffee-text--desc {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
   line-height: 25px;
   margin: 0;
 }
 
-.why-us .why-wrap {
+.why-us--container {
   background: #333D4B;
   width: 327px;
   height: 902px;
@@ -140,18 +141,18 @@ header .header-wrap ul {
   margin: 0 0 717px;
   color: #FEFCF7;
 }
-.why-us .why-wrap .why-text-wrap {
+.why-us--text {
   margin: 64px 0 34px;
   width: 279px;
   text-align: center;
 }
-.why-us .why-wrap .why-text-wrap h2 {
+.why-us--text h2 {
   margin: 0 0 24px;
   font-family: "Fraunces", serif;
   font-size: 28px;
   font-weight: 900;
 }
-.why-us .why-wrap .why-text-wrap p {
+.why-us--text p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
   line-height: 25px;
@@ -162,10 +163,10 @@ header .header-wrap ul {
   text-align: center;
   margin: 0 0 120px;
 }
-.how-it-works .how-wrap {
+.how-it-works--container {
   width: 327px;
 }
-.how-it-works .how-wrap h2 {
+.how-it-works--container h2 {
   font-family: "Fraunces", serif;
   font-size: 24px;
   font-weight: 900;
@@ -173,20 +174,20 @@ header .header-wrap ul {
   color: #83888F;
   margin: 0 0 80px;
 }
-.how-it-works .how-wrap .how-card {
+.how-it-works--card {
   margin: 28px 0;
 }
-.how-it-works .how-wrap .how-card:first-of-type {
+.how-it-works--card:first-of-type {
   margin: 0 0 28px;
 }
-.how-it-works .how-wrap .how-card h4 {
+.how-it-works--card h4 {
   font-family: "Fraunces", serif;
   font-size: 72px;
   font-weight: 900;
   color: #FDD6BA;
   margin: 0;
 }
-.how-it-works .how-wrap .how-card h3 {
+.how-it-works--card-heading {
   font-family: "Fraunces", serif;
   font-size: 28px;
   font-weight: 900;
@@ -194,13 +195,13 @@ header .header-wrap ul {
   color: #333D4B;
   margin: 24px 0;
 }
-.how-it-works .how-wrap .how-card p {
+.how-it-works--card p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
   line-height: 25px;
   color: #333D4B;
 }
-.how-it-works .how-wrap button {
+.how-it-works button {
   margin: 51px 0 0;
 }
 
@@ -208,7 +209,7 @@ header .header-wrap ul {
   margin: 0 0 120px;
 }
 
-.why-card {
+.why-cards--card {
   background: #0E8784;
   width: 279px;
   height: 382px;
@@ -217,25 +218,25 @@ header .header-wrap ul {
   color: #FEFCF7;
   margin: 24px 0;
 }
-.why-card:first-of-type {
+.why-cards--card:first-of-type {
   margin: 0 0 24px;
 }
-.why-card:last-of-type {
+.why-cards--card:last-of-type {
   margin: 24px 0 0;
 }
-.why-card .why-card-img {
+.why-cards--card-img {
   margin: 72px 0 32px;
 }
-.why-card .why-card-text {
+.why-cards--card-text {
   width: 255px;
 }
-.why-card .why-card-text h3 {
+.why-cards--card-text--heading {
   margin: 24px 0;
   font-family: "Fraunces", serif;
   font-size: 24px;
   line-height: 32px;
 }
-.why-card .why-card-text p {
+.why-cards--card-text p {
   margin: 0 0 48px;
   width: 212px;
   font-family: "Barlow", sans-serif;
@@ -243,21 +244,21 @@ header .header-wrap ul {
   line-height: 25px;
 }
 
-footer .footer-wrap {
+footer .footer--wrapper {
   background: #2C343E;
   width: 327px;
   height: 238px;
   margin: 0 0 72px;
   padding: 54px 0;
 }
-footer .footer-wrap .footer-logo {
+footer .footer--logo {
   margin: 0;
 }
-footer .footer-wrap nav {
+footer .footer--nav {
   width: 100%;
   margin: 48px 0 50px;
 }
-footer .footer-wrap nav ul {
+footer .footer--nav ul {
   margin: 0;
   padding: 0;
   font-family: "Barlow", sans-serif;
@@ -268,24 +269,24 @@ footer .footer-wrap nav ul {
   text-align: center;
   letter-spacing: 0.92px;
 }
-footer .footer-wrap nav ul li {
+footer .footer--nav ul li {
   list-style: none;
   margin: 24px 0;
 }
-footer .footer-wrap nav ul li:first-of-type {
+footer .footer--nav ul li:first-of-type {
   margin: 0 0 24px;
 }
-footer .footer-wrap nav ul li:last-of-type {
+footer .footer--nav ul li:last-of-type {
   margin: 24px 0 0;
 }
-footer .footer-wrap .socials {
+footer .footer--socials {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   width: 120px;
 }
 
-.about .about-card {
+.about--card {
   width: 327px;
   height: 400px;
   position: relative;
@@ -297,19 +298,19 @@ footer .footer-wrap .socials {
   z-index: 0;
   border-radius: 10px;
 }
-.about .about-card .about-card-wrap {
+.about--text {
   width: 100%;
   height: 100%;
   padding: 111px 24px 87px;
   box-sizing: border-box;
 }
-.about .about-card .about-card-wrap h2 {
+.about--text h2 {
   margin: 0 0 24px;
   font-family: "Fraunces", serif;
   font-size: 28px;
   font-weight: 900;
 }
-.about .about-card .about-card-wrap p {
+.about--text p {
   margin: 0;
   line-height: 25px;
   opacity: 0.8;
@@ -318,12 +319,12 @@ footer .footer-wrap .socials {
   font-weight: 400;
 }
 
-.commitment .commitment-wrap {
+.commitment--wrapper {
   width: 327px;
   text-align: center;
   color: #333D4B;
 }
-.commitment .commitment-wrap .barista-card {
+.commitment--barista-card {
   width: 327px;
   height: 400px;
   position: relative;
@@ -332,14 +333,14 @@ footer .footer-wrap .socials {
   border-radius: 10px;
   z-index: 0;
 }
-.commitment .commitment-wrap h2 {
+.commitment--text h2 {
   margin: 48px 0 30px;
   line-height: 48px;
   font-family: "Fraunces", serif;
   font-size: 32px;
   font-weight: 900;
 }
-.commitment .commitment-wrap p {
+.commitment--text p {
   margin: 0;
   line-height: 25px;
   font-family: "Barlow", sans-serif;
@@ -350,7 +351,7 @@ footer .footer-wrap .socials {
 .quality {
   width: 100%;
 }
-.quality .quality-wrap {
+.quality--wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -363,7 +364,7 @@ footer .footer-wrap .socials {
   background: #2C343E;
   border-radius: 10px;
 }
-.quality .quality-wrap .cup-card {
+.quality--cup-card {
   display: block;
   position: absolute;
   top: -78px;
@@ -373,20 +374,20 @@ footer .footer-wrap .socials {
   background-size: contain;
   border-radius: 8px;
 }
-.quality .quality-wrap .quality-text-wrap {
+.quality--text {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   color: #FEFCF7;
 }
-.quality .quality-wrap .quality-text-wrap h2 {
+.quality--text h2 {
   margin: 0 0 24px;
   font-family: "Fraunces", serif;
   font-size: 28px;
   font-weight: 900;
 }
-.quality .quality-wrap .quality-text-wrap p {
+.quality--text p {
   margin: 0;
   line-height: 25px;
   opacity: 80%;

@@ -1,6 +1,6 @@
 .hero {
     @extend %center-flex;
-    .hero-wrap {
+    &--wrapper {
         @extend %center-flex;
         align-items: center;
         background: url('../assets/home/mobile/image-hero-coffeepress.jpg') center no-repeat #A2A2A2;
@@ -9,30 +9,30 @@
         height: 500px;
         border-radius: 10px;
         color: $lightcream;
-        .hero-text-wrap {
-            width: 279px;
-            text-align: center;
-            h1 {
-                font: { 
-                family: $fraunces;
-                size: 40px;
-                }
-                line-height: 40px;
-                margin: 0 0 24px;
+    }
+    &--text {
+        width: 279px;
+        text-align: center;
+        h1 {
+            font: { 
+            family: $fraunces;
+            size: 40px;
             }
-            p {
-                font: {
-                    family: $barlow;
-                    size: 15px;
-                }
-                line-height: 25px;
-                opacity: 80%;
-                margin: 0;               
+            line-height: 40px;
+            margin: 0 0 24px;
+        }
+        p {
+            font: {
+                family: $barlow;
+                size: 15px;
             }
-            button {
-                @extend %button;
-                margin: 39px 0 0;
-            }
+            line-height: 25px;
+            opacity: 80%;
+            margin: 0;               
+        }
+        button {
+            @extend %button;
+            margin: 39px 0 0;
         }
     }
 }

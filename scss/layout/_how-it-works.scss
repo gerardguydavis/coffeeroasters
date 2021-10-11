@@ -2,7 +2,7 @@
     @extend %center-flex;
     text-align: center;
     margin: 0 0 120px;
-    .how-wrap {
+    &--container {
         @extend %center-flex;
         width: 327px;
         h2 {
@@ -15,42 +15,42 @@
             color: $grey;
             margin: 0 0 80px;
         }
-        .how-card {
-            margin: 28px 0;
-            &:first-of-type {
-                margin: 0 0 28px;
-            }
-            h4 {
-                font: {
-                    family: $fraunces;
-                    size: 72px;
-                    weight: 900;
-                }
-                color: $paleorange;
-                margin: 0;
-            }
-            h3 {
-                font: {
-                    family: $fraunces;
-                    size: 28px;
-                    weight: 900;
-                }
-                line-height: 32px;
-                color: $darkgreyblue;
-                margin: 24px 0;
-            }
-            p {
-                font: {
-                    family: $barlow;
-                    size: 15px;
-                }
-                line-height: 25px;
-                color: $darkgreyblue;
-            }
+    }
+    &--card {
+        margin: 28px 0;
+        &:first-of-type {
+            margin: 0 0 28px;
         }
-        button {
-            @extend %button;
-            margin: 51px 0 0;
+        h4 {
+            font: {
+                family: $fraunces;
+                size: 72px;
+                weight: 900;
+            }
+            color: $paleorange;
+            margin: 0;
         }
+        &-heading {
+            font: {
+                family: $fraunces;
+                size: 28px;
+                weight: 900;
+            }
+            line-height: 32px;
+            color: $darkgreyblue;
+            margin: 24px 0;
+        }
+        p {
+            font: {
+                family: $barlow;
+                size: 15px;
+            }
+            line-height: 25px;
+            color: $darkgreyblue;
+        }
+    }
+    button {
+        @extend %button;
+        margin: 51px 0 0;
     }
 }

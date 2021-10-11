@@ -1,4 +1,4 @@
-.why-card {
+.why-cards--card {
     @extend %center-flex;
     background: $darkcyan;
     width: 279px;
@@ -13,13 +13,13 @@
     &:last-of-type {
         margin: 24px 0 0;
     }
-    .why-card-img {
+    &-img {
         margin: 72px 0 32px;
     }
-    .why-card-text {
+    &-text {
         width: 255px;
         @extend %center-flex;
-        h3 {
+        &--heading {
             margin: 24px 0;
             font: {
                 family: $fraunces;
@@ -35,6 +35,6 @@
                 font-size: 15px;
             }
             line-height: 25px;
-        }   
-    }
+        }
+    }   
 }

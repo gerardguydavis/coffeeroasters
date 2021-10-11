@@ -1,6 +1,6 @@
 .about {
     @extend %center-flex;
-    .about-card {
+    &--card {
         width: 327px;
         height: 400px;
         position: relative;
@@ -11,28 +11,28 @@
         color: $lightcream;
         z-index: 0;
         border-radius: 10px;
-        .about-card-wrap {
-            width: 100%;
-            height: 100%;
-            padding: 111px 24px 87px;
-            box-sizing: border-box;
-            h2 {
-                margin: 0 0 24px;
-                font: {
-                    family: $fraunces;
-                    size: 28px;
-                    weight: 900;
-                }
+    }
+    &--text {
+        width: 100%;
+        height: 100%;
+        padding: 111px 24px 87px;
+        box-sizing: border-box;
+        h2 {
+            margin: 0 0 24px;
+            font: {
+                family: $fraunces;
+                size: 28px;
+                weight: 900;
             }
-            p {
-                margin: 0;
-                line-height: 25px;
-                opacity: .8;
-                font: {
-                    family: $barlow;
-                    size: 15px;
-                    weight: 400;
-                }
+        }
+        p {
+            margin: 0;
+            line-height: 25px;
+            opacity: .8;
+            font: {
+                family: $barlow;
+                size: 15px;
+                weight: 400;
             }
         }
     }
