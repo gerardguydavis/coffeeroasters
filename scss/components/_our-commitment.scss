@@ -1,11 +1,11 @@
 .commitment {
     @extend %center-flex;
-    &--wrapper {
+    &__wrapper {
         width: 327px;
         text-align: center;
         color: $darkgreyblue;
     }
-    &--barista-card {
+    &__barista-card {
         width: 327px;
         height: 400px;
         position: relative;
@@ -14,7 +14,7 @@
         border-radius: 10px;
         z-index: 0;
     }
-    &--text {
+    &__text {
         h2 {
             margin: 48px 0 30px;
             line-height: 48px;

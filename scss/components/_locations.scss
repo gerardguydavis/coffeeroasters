@@ -1,0 +1,45 @@
+.locations {
+    @extend %center-flex;
+    margin: 120px 0 80px;
+    &__container {
+        @extend %center-flex;
+        h3 {
+            margin: 0 0 32px;
+            color: $grey;
+            font: {
+                family: $fraunces;
+                size: 24px;
+            }
+        }
+    }
+    &__location {
+        @extend %center-flex;
+        width: 327px;
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    &__country {
+        width: 100%;
+        color: $darkgreyblue;
+        font: {
+            family: $fraunces;
+            size: 28px;
+            weight: 900;
+        }
+        &-img {
+            width: 100%;
+        }
+    }
+
+    &__address {
+        width: 100%;
+        color: $darkgreyblue;
+        line-height: 26px;
+        font: {
+            family: $barlow;
+            size: 16px;
+            style: normal;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 .quality {
     @extend %center-flex;
     width: 100%;
-    &--wrapper {
+    &__wrapper {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -14,7 +14,7 @@
         background: $footergrey;
         border-radius: 10px;
     }
-    &--cup-card {
+    &__cup-card {
         display: block;
         position: absolute;
         top: -78px;
@@ -24,7 +24,7 @@
         background-size: contain;
         border-radius: 8px;
     }
-    &--text {
+    &__text {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;

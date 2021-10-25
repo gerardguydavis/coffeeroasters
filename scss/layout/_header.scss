@@ -1,6 +1,9 @@
 header {
     @extend %center-flex;
-    .header--wrapper {
+}
+
+.header {
+    &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -16,13 +19,13 @@ header {
             }
         }
     }
-    .header--nav {
+    &__nav {
         .hamburger {
             content: url("../assets/shared/mobile/icon-hamburger.svg");
             width: 16px;
         }
 
-        &--menu {
+        &-list {
             display: none;
             background: pink;
         }
